@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="Stylesheet" href="Calculator.css">
+</head>
+<body>
+    <center>
+    <div class="Calculate">
+        <form>
+        <div class="display">
+        <input type="text" name="display">
+            
+        </div>
+        <div class="row1">
+             <input class="r1" type="button" value="7" onclick="display.value += '7'" >
+             <input class="r1" type="button" value="8" onclick="display.value += '8' ">
+             <input class="r1" type="button" value="9" onclick="display.value += '9'">
+             <input class="r1" id="ac" type="button" value="AC" onclick="display.value = ''">
+             <input class="r1" id="de" type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+             
+             
+        </div>
+
+
+        <div class="row2">
+            <input class="r2" type="button" value="4" onclick="display.value += '4'">
+             <input class="r2" type="button" value="5" onclick="display.value += '5'">
+             <input class="r2" type="button" value="6" onclick="display.value += '6'">
+             <input class="r2" id="add" type="button" value="+" onclick="display.value += '+'">
+             <input class="r2" id="sub" type="button" value="-" onclick="display.value += '-'">
+            
+        </div>
+
+        <div class="row3">
+            <input class="r3" type="button" value="1" onclick="display.value += '1'">
+             <input class="r3" type="button" value="2" onclick="display.value += '2'">
+             <input class="r3" type="button" value="3" onclick="display.value += '3'">
+             <input class="r4" id="div" type="button" value="/" onclick="display.value += '/'">
+             <input class="r4" id="mul" type="button" value="*" onclick="display.value += '*'">
+             
+        </div> 
+
+        <div class="row4">
+            <input class="r3" type="button" value="0" onclick="display.value += '0'">
+            <input class="r3" id="Oo"type="button" value="00" onclick="display.value += '00'">
+            <input class="r4" id="dot"type="button" value="." onclick="display.value += '.'">
+            
+             <input class="r4" id="equal" type="button" value="=" onclick="display.value = eval(display.value)">
+        </div>
+
+        </form>
+    </div>
+
+</Center>
+
+ <script src="Calculator.js"></script>
+</body>
+</html>
